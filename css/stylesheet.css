@@ -601,3 +601,13 @@ body{overflow-x: hidden;
   display: none !important;
 }
 
+
+/* Styles for tablets */
+@media only screen and (max-width: 1024px) {
+  /* Your tablet styles go here */
+}
+
+/* Styles for mobile devices */
+@media only screen and (max-width: 768px) {
+  /* Your mobile styles go here */
+}
