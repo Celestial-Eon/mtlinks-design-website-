@@ -25,6 +25,9 @@ body{overflow-x: hidden;
   margin: 0 auto;
 }
 
+.fullHeight{
+  height: 100vh;
+}
 .aboutContainer {
   display: inline-block;
 }
@@ -422,23 +425,7 @@ body{overflow-x: hidden;
   background-color: #2E3192;
 }
 
-@media (max-width: 48rem) {
-  .viewWorkButton {
-    width: 12.5rem;
-    height: 5rem;
-    font-size: 1rem;
-    padding: 0.125rem 0.25rem;
-  }
-}
 
-@media (max-width: 30rem) {
-  .viewWorkButton {
-    width: 9.375rem;
-    height: 3.75rem;
-    font-size: 0.875rem;
-    padding: 0.09375rem 0.1875rem;
-  }
-}
 
 .footer {
   background-color: transparent;
@@ -604,10 +591,83 @@ body{overflow-x: hidden;
 
 /* Styles for tablets */
 @media only screen and (max-width: 1024px) {
-  /* Your tablet styles go here */
+  .largeDisplay{
+    font-size: 70px;
+  }
+  
+  .mediumDisplay{
+    font-size: 40px;
+  }
+.smallDisplay{
+  font-size: 30px;
 }
+
+.viewWorkButton{
+  size: 25%;
+}
+.bodyText{
+  font-size: 16px;
+}
+
+.aboutMe{
+  size: 25%;
+}
+
+}
+
+
 
 /* Styles for mobile devices */
 @media only screen and (max-width: 768px) {
-  /* Your mobile styles go here */
+  .largeDisplay{
+    font-size: 50px;
+  }
+  
+  .mediumDisplay{
+    font-size: 30px;
+  }
+.smallDisplay{
+  font-size: 20px;
 }
+
+.viewWorkButton{
+  size: 25%;
+}
+.bodyText{
+  font-size: 25px;
+}
+
+.aboutMe{
+  size: 25%;
+}
+
+}
+
+
+/*-------------jQueryButton----------------*/
+.animatedButton
+	margin: auto
+	position: relative
+	display: block
+	font-weight: 100
+	background: #ffffff 
+	border: 1px solid rgba($color, 1)
+	text-decoration: none
+	color: $color
+	padding: 15px 20px
+	transition: .225s ease all
+	overflow: hidden
+	will-change: transform
+	box-shadow: 3px 3px 0px rgba($color, 0.5)
+
+	&:hover, &:focus
+		cursor: pointer
+		transform: translate(-4px, -4px)
+		box-shadow: 7px 7px 0px rgba($color, 0.3)
+		color: black
+
+	&.clicked
+		cursor: pointer
+		transform: translate(3px, 3px) !important
+		box-shadow: 0px 0px 0px rgba($color, 1) !important
+		border: 1px solid rgba($color, 0.5)
